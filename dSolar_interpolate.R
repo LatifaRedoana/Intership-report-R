@@ -1,13 +1,13 @@
 library(tidyverse)
 #loading the daily_means data file
 library(readxl)#  package for loading excel file
-daily_means<- read_excel('daily_means.xlsx') 
+data<- read.csv('weighted_sum.csv') 
 
 # select column for solar installed
 library(dplyr)
 Solar_installed<- daily_means%>%select(date,`Solar installed`)
 head(Solar_installed,5)
-
+sa
 #create data frame for yearly data points
 year<-c(2015,2016,2017,2018,2019,2020,2021,2022)
 Solar_product<-c(37271,38686,40834,42804,45299,48206,53302,57744)
