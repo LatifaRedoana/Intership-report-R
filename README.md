@@ -1,10 +1,57 @@
-Predicting German electricity using Time Series Analysis
-# Predicting German electricity using Time Series Analysis: SARIMA and Dynamic Harmonic Regression
 
-This repository contains the implementation of time series forecasting techniques for predicting electricity production, with a focus on trend and seasonality identification and forecasting accuracy. The objectives outlined below were achieved through the use of graphical analysis, SARIMA modeling, and dynamic harmonic regression with Fourier terms.
+## ♻️ Predicting German electricity using Time Series Analysis: SARIMA and Dynamic Harmonic Regression
 
-## Objectives
+This repository contains the implementation of time series forecasting techniques for predicting German electricity production, with a focus on **three renewable energy sources - Solar, Windonshore, Windoffshore**.  The objectives outlined below were achieved through the use of graphical analysis, SARIMA modeling, and dynamic harmonic regression with Fourier terms.
 
+📘 **Author:** Latifa Redoana  
+🎓 **University:** TU Dortmund, Germany  
+🏢 **Company:** REMONDIS SmartRec GmbH
+
+## 📊 Data Description
+
+The dataset was provided by **REMONDIS Energy & Services GmbH & Co. KG**, Lünen, Germany and represents electricity production at various time granularities. A comparable public dataset is available from the **ENTSO-E Transparency Platform**, which provides comprehensive electricity system data for most European countries.
+🔗 [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/)
+
+---
+
+## 🎯 Project Objectives
+trend and seasonality identification and forecasting accuracy
+### 📈 Visual Exploration:
+- Graphically represent selected features to identify **trend** and **seasonality** in the time series.
+- ### 🗓️ Monthly Series:
+- Apply **differencing** to remove trend and seasonal components.
+- Fit and evaluate **SARIMA models**.
+- Select the best-performing model based on forecast accuracy.
+
+### 📅 Weekly and Daily Series:
+- Use techniques such as **STL decomposition** and **TBATS models** to handle complex and high-frequency seasonal patterns.
+
+### 🎵 Dynamic Harmonic Regression:
+- Use **dynamic harmonic regression with Fourier regressors** to capture and forecast complex seasonality in high-frequency series.
+
+### ✅ Model Evaluation:
+- Evaluate forecasting models using accuracy metrics such as:
+  - **RMSE** (Root Mean Square Error)
+  - **AIC** (Akaike Information Criterion)
+  - **MAPE** (Mean Absolute Percentage Error)
+
+---
+
+## 🧰 Tools and Libraries (in R)
+
+This project utilizes the statistical programming language **R**, along with the following key packages:
+
+- `forecast` – Classical time series models (ARIMA, ETS)
+- `fpp2` / `fpp3` – Structured forecasting framework
+- `tseries` – Time series decomposition and tests
+- `BBmisc` – Utility tools for metrics and tuning
+- `tidyverse` – Data wrangling and visualization
+- `tsibble` – Tidy time series format
+- `lubridate` – Date and time handling
+- `prophet` *(optional)* – Additive models with multiple seasonalities
+
+
+---
 ### 1. Graphical Representation of Data
 - **Objective**: Visualize the selected features to identify trends and seasonality in the data.
 - **Method**: Use graphical plots (e.g., line plots, seasonal subseries plots, and decomposition plots) to explore the underlying patterns of the electricity production time series.
@@ -26,5 +73,12 @@ This repository contains the implementation of time series forecasting technique
   - Apply dynamic harmonic regression with Fourier regressors to model and capture complex seasonality.
   - Select the best model based on forecast accuracy measures like RMSE or MAPE.
 
+
+🧠 Tools & Libraries
+- Python (Pandas, NumPy, statsmodels, TensorFlow/Keras, matplotlib)
+- Jupyter Notebooks
+- Darts (for frequency spectrum)
+
+---
 ## Conclusion
 This repository demonstrates the application of statistical and machine learning techniques to forecast electricity production data. By identifying trends and seasonality, applying SARIMA and dynamic harmonic regression models, we can make accurate predictions for future electricity generation.
