@@ -3,7 +3,7 @@
 
 This repository contains the implementation of time series forecasting techniques for predicting German electricity production, with a focus on **three renewable energy sources - Solar, Windonshore, Windoffshore**.  The objectives outlined below were achieved through the use of graphical analysis, SARIMA modeling, and dynamic harmonic regression with Fourier terms.
 
-📘 **Author:** Latifa Redoana 
+📘 **Author:** Latifa Redoana  
 🎓 **University:** TU Dortmund, Germany  
 🏢 **Company:** REMONDIS SmartRec GmbH
 
@@ -51,6 +51,7 @@ However, for **weekly data** with a seasonal period around `52.18`, these models
   - **RMSE** (Root Mean Square Error)
   - **AIC** (Akaike Information Criterion)
   - **MAPE** (Mean Absolute Percentage Error)
+- Model Evaluation Using Diagonostic Residual Plots: Residuals are the **differences between actual and predicted values** of the time series. Ideally, they should behave like white noise: **Zero mean**, **Constant variance**, **No autocorrelation**, **Normally distributed**
 
 ---
 
