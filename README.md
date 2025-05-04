@@ -21,7 +21,7 @@ The dataset was provided by **REMONDIS Energy & Services GmbH & Co. KG**, Lünen
 ### 📈 Visual Exploration:
 - Graphically represent selected features to identify **trend** and **seasonality** in the time series. Use graphical plots (e.g., line plots, seasonal subseries plots, and decomposition plots) to explore the underlying patterns.
   
-- ### 🗓️ Monthly Series:
+### 🗓️ Monthly Series:
 - Apply **differencing** to remove trend and seasonal components.
 - Fit and evaluate **SARIMA models**.
 - Select the best-performing model based on forecast accuracy.
@@ -36,7 +36,7 @@ However, for **weekly data** with a seasonal period around `52.18`, these models
 
 - The `ets()` function in R is limited to `m ≤ 24`
 - The `arima()` function can theoretically support `m ≈ 350`, but in practice, seasonality above `200` is often unstable or inefficient
-### 🎵 Handling Complex Seasonality with Harmonic Regression:
+#### 🎵 Handling Complex Seasonality with Harmonic Regression:
 - Use **dynamic harmonic regression with Fourier regressors** to capture and forecast complex seasonality in high-frequency series.
   
 ### 🔁 Fourier Terms
